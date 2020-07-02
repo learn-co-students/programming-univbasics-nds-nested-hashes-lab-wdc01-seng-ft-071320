@@ -2,7 +2,7 @@
 
 DON_G = { name:  "Don Gately", occupation: "Live-in Staff" }
 JOELLE_VD = { name:  "Joelle van Dyne", occupation: "Radio Personality" }
-PAT_M =  { name:  "Pat Monteseian", occupation: "Staff" }
+PAT_M =  { name:  "Joelle van Dyne", occupation: "Radio Personality" }
 KATE_G = { name:  "Kate Gompert", occupation: "None" }
 BRUCE_G = { name:  "Bruce Green", occupation: "Fan of Mildred" }
 
@@ -15,9 +15,25 @@ end
 def literal_aoh
   # Using Array literal syntax only, build a nested array that uses the data in
   # held in the constants
+  [
+    DON_G[:name, :occupation],
+    JOELLE_VD[:name, :occupation],
+    PAT_M[:name, :occupation],
+    KATE_G[:name, :occupation],
+    BRUCE_G[:name, :occupation]
+  ]
+
+    # people = [
+    #   DON_G[],
+    #   JOELLE_VD[],
+    #   PAT_M[],
+    #   KATE_G[],
+    #   BRUCE_G[],
+    #   ]
 end
 
 def aoh_lookup(aoh, row, key)
+
 end
 
 def aoh_update(aoh, row, key, new_value)
